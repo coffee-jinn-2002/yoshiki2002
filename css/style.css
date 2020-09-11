@@ -7,20 +7,26 @@ html {
   font-size: 62.5%;
 }
 body {
-  background: #151515 url('../images/shidoni.jpg') no-repeat fixed left bottom;
+  /* background: #151515 url('../images/shidoni.jpg') no-repeat fixed left bottom; */
   background-size: cover;
   color: #fff;
   text-align: center;
   font-size: 1.4rem;
   font-family: Raleway, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+  background-color: #333;
 }
 *, *::before, *::after {
   box-sizing: border-box;
 }
+**::before,*::after {
+  box-sizing: inherit;
+}
+*{
+  margin: 0;
+}
 p{
   font-size: 20px;
 }
-
 
 /* --------------------------------
  * parts
@@ -43,7 +49,7 @@ p{
   font-size: 4rem;
   color: black;
 }
-.heading::before,
+/* .heading::before,
 .heading::after {
   content: '';
   position: absolute;
@@ -51,7 +57,7 @@ p{
   bottom: 0;
   left: 0;
   border-bottom: 1px solid #fff;
-}
+} */
 .heading1::before,
 .heading1::after {
   content: '';
@@ -146,7 +152,7 @@ p{
  * works
  * -------------------------------- */
 .works {
-  padding: 80 0;
+  padding: 0 0;
   background-color: #383634;
 }
 .works-wrapper {
@@ -222,6 +228,9 @@ p{
   top: 0;
 }
 
+
+
+
 /* --------------------------------
  * work1
  * -------------------------------- */
@@ -230,14 +239,14 @@ p{
   background-color: #fff;
   color: #000;
 }
-.work-img{
+.work12-wrapper{
   display: flex;
 }
 .work-1{
   flex-grow: 1;
 }
 .work1-img{
-  width: auto;
+  width: 70%;
 }
 .work-p{
   font-size: 40px;
@@ -250,16 +259,19 @@ p{
   flex-grow: 1;
 }
 .work2-img{
-  width: auto;
+  width: 70%;
 }
 /* --------------------------------
  * work3
  * -------------------------------- */
+.work34-wrapper{
+  display: flex;
+}
 .work-3{
   flex-grow: 1;
 }
-.work4-img{
-  width: auto;
+.work3-img{
+  width: 70%;
 }
 /* --------------------------------
  * work4
@@ -268,8 +280,12 @@ p{
   flex-grow: 1;
 }
 .work4-img{
-  width: auto;
+  width: 70%;;
 }
+
+
+
+
 /* --------------------------------
  * hobby
  * -------------------------------- */
@@ -383,7 +399,7 @@ p{
 
 
 /* --------------------------------
- * contact
+ * motto
  * -------------------------------- */
 .motto {
   padding: 30px 0 50px;
@@ -393,44 +409,6 @@ p{
   font-family: "Yu Mincho",'游明朝';
   font-size: 50px;
 }
-/* .contact-form {
-  width: 50%;
-  margin: 50px auto 0;
-}
-.contact-form input[type=text],
-.contact-form textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 15px;
-  outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 0;
-  background-color: rgba(255, 255, 255, 0.05);
-  color: #fff;
-}
-.contact-form input[type=text]:focus,
-.contact-form textarea:focus {
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
-}
-.contact-form textarea {
-  height: 150px;
-}
-.contact-form input[type=submit] {
-  display: block;
-  width: 200px;
-  margin: 40px auto 0;
-  padding: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 5px;
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.6);
-  cursor: pointer;
-}
-.contact-form input[type=submit]:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-} */
-
 
 /* --------------------------------
  * footer
@@ -485,6 +463,30 @@ p{
     line-height: 1.8;
   }
 
+  /* --- hobby --- */
+  .hobbys-wrapper,
+  .hobby-box {
+    display: block;
+  }
+  .hobby-image {
+    display: none;
+  }
+  .hobby-description {
+    position: relative;
+  }
+  .hobby-box::after {
+    top: 0;
+    height: 100%;
+    background-size: cover;
+    transform: none;
+  }
+  .hobby-description-inner {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 70px;
+  }
+
   /* --- works --- */
   .works-wrapper,
   .work-box {
@@ -496,12 +498,32 @@ p{
   .work-description {
     position: relative;
   }
+  .work-description-inner {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 65px;
+  }
   .work-box::after {
     top: 0;
     height: 100%;
     background-size: cover;
     transform: none;
   }
+  /* --- work1234 --- */
+  .work1,
+  .work12-wrapper,
+  .work34-wrapper{
+    display: block;
+  }
+  .work1-img,
+  .work2-img,
+  .work3-img,
+  .work4-img{
+    width: 100%;
+    margin: 0 auto;
+  }
+
 
   /* --- skills --- */
   .skills-wrapper,
@@ -530,14 +552,12 @@ p{
   }
 }
 
-
 /* --------------------------------
  * challenge
  *
  * 31行目からの.heading::before, .heading::afterの
  * スタイルをコメントアウトしてから適用してください。
  * -------------------------------- */
-/*
 .heading::before,
 .heading::after {
   content: '';
@@ -570,4 +590,25 @@ p{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-*/
+
+
+.hobby-box {
+  overflow: hidden;
+}
+.hobby-image {
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+}
+.hobby-box:nth-child(odd) .hobby-image {
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+}
+.hobby-box:nth-child(even) .hobby-image {
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+}
+.hobby-box:hover .hobby-image {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
