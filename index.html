@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="yoshiki's portfoilo">
+  <meta name="viewport" content="width=device-width">
   <title>YOSHIKI's portfolio</title>
   <link rel="icon" href="images/logo.png">
   <link rel="stylesheet" href="css/normalize.css">
@@ -13,7 +13,7 @@
   <!-- ヘッダー編 -->
   <header class="header">
     <p class="site-title-sub">welcome</p>
-    <span class="site-title" id="ityped"></span>
+    <span class="site-title" id="ityped"> </span>
     <p class="site-description">Check out some of my works.</p>
     <div class="buttons">
       <a class="button" href="#about">WHO AM I</a>
@@ -24,7 +24,7 @@
   <section class="about" id="about">
     <h2 class="heading1">ABOUT ME</h2>
     <p class="about-text">
-      はじめまして。日本の現役高校三年生です。<br>
+      はじめまして。現役高校三年生です。<br>
       名前は久保田仁喜です。<br>
       高校二年次の夏にセブ島にIT留学をしたきっかけで<br>
       趣味としてプログラミングをしています。
@@ -145,7 +145,7 @@
             <p class="work-text">
               八月三十日<br>
               代議士の笹川先生と対談<br>
-              <a href="#work1-2" class="button button-ghost">READ MORE</a>
+              <a href="#work2" class="button button-ghost">READ MORE</a>
             </p>
           </div>
         </div>
@@ -169,7 +169,7 @@
             <p class="work-text">
               現在はいじめの研究をしていますが、<br>
               これから「場の空気・雰囲気」の研究も行いたい<br>
-              <a href="#woek3-4" class="button button-ghost">READ MORE</a>
+              <a href="#work4" class="button button-ghost">READ MORE</a>
             </p>
           </div>
         </div>
@@ -179,7 +179,7 @@
 　<!-- ワーク詳細編　 -->
   <section class="work1" id="work1-2">
     <h2 class="heading1">RESEARCH</h2>
-    <div class="work-img">
+    <div class="work12-wrapper">
   <!-- ワーク1 -->
       <div class="work-1">
         <img class="work1-img" src="images/research.png">
@@ -200,11 +200,12 @@
           まず、文献調査から入りいじめの歴史を研究しました。<br>
           次に、海外の歴史や対策と日本の比較調査も行いました。<br>
           また日本の現代の対策の考察をしました。<br>
-          考察から対策を思考しました。
+          考察から対策を思考しました。<br>
+            
         </p>
       </div>
   <!-- ワーク2 -->
-      <div class="work-2">
+      <div class="work-2" id="work2">
         <img class="work2-img" src="images/interview1.png">
         <p class="work-p">
           代議士の笹川先生と対談
@@ -225,14 +226,14 @@
       </div>
     </div>
   <!-- ワーク詳細2 -->
-    <div class="work-img" id="work3-4">
+    <div class="work34-wrapper" id="work3-4">
   <!-- ワーク3 -->
       <div class="work-3">
-        <img class="work3-img" src="images/interview2.png">
-        <p class="work-p">
+      <img class="work3-img" src="images/interview2.png">
+      <p class="work-p">
           弁護士の木村先生と対談
-        </p>
-        <p>
+      </p>
+      <p>
           社会的地位によるいじめの認識の違いと<br>
           自分が思案した対策が法的に<br>
           実現可能かどうかの意見を頂いた。<br>
@@ -242,15 +243,15 @@
           義務教育の教育課程に入っていないことに問題があると<br>
           考え、これに対する法の専門家としての意見や<br>
           法律の重要性についてなどを伺いました。
-        </p>
+      </p>
       </div>
   <!-- ワーク4 -->
-      <div class="work-4">
-        <img class="work4-img" src="images/charenge.png">
-        <p class="work-p">
+      <div class="work-4" id="work4">
+      <img class="work4-img" src="images/charenge.png">
+      <p class="work-p">
           これからの研究
-        </p>
-        <p>
+      </p>
+      <p>
           いじめの研究をしていくうえで<br>
           対策を思案したが、根本的にな解決に<br>
           なっていないと考えました。<br>
@@ -260,7 +261,8 @@
           この研究の最終目標は、空気を指標化し、<br>
           観測システムを作り、異常が検知されたら<br>
           自動で対処するというシステムを構築することです。
-        </p>
+      </p>
+      </div>
       </div>
     </div>
   </section>
