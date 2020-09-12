@@ -28,6 +28,10 @@ p{
   font-size: 20px;
 }
 
+
+
+
+
 /* --------------------------------
  * parts
  * -------------------------------- */
@@ -244,6 +248,7 @@ p{
 }
 .work-1{
   flex-grow: 1;
+  width: 50%;
 }
 .work1-img{
   width: 70%;
@@ -252,14 +257,25 @@ p{
   font-size: 40px;
   margin: 20px;
 }
+.work-pp{
+  word-wrap: break-word;
+  width: 50%;
+  margin: 5% 25%;
+}
 /* --------------------------------
  * work2
  * -------------------------------- */
 .work-2{
   flex-grow: 1;
+  width: 50%;
 }
 .work2-img{
   width: 70%;
+}
+.work-p-p{
+  word-wrap: break-word;
+  width: 50%;
+  margin: 5% 25%;
 }
 /* --------------------------------
  * work3
@@ -269,6 +285,7 @@ p{
 }
 .work-3{
   flex-grow: 1;
+  width: 50%;
 }
 .work3-img{
   width: 70%;
@@ -278,6 +295,7 @@ p{
  * -------------------------------- */
 .work-4{
   flex-grow: 1;
+  width: 50%;
 }
 .work4-img{
   width: 70%;;
@@ -516,12 +534,25 @@ p{
   .work34-wrapper{
     display: block;
   }
+  .work-1,
+  .work-2,
+  .work-3,
+  .work-4{
+    width: 100%;
+  }
   .work1-img,
   .work2-img,
   .work3-img,
   .work4-img{
     width: 100%;
     margin: 0 auto;
+  }
+
+  .work-pp,
+  .work-p-p{
+    width: 60%;
+    margin: 0;
+    margin-left: 20%;
   }
 
 
@@ -551,6 +582,10 @@ p{
     width: 80%;
   }
 }
+
+
+
+
 
 /* --------------------------------
  * challenge
